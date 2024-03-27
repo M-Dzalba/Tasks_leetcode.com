@@ -17,10 +17,9 @@ public class RomanToInt {
 
     public static int romanToInt(String s) {
         int result=0;
-        char[]chars=s.toCharArray();
         int symToVal;
-        for (char aChar : chars) {
-            switch (aChar) {
+        for (int i=0;i<s.length();i++) {
+            switch (s.charAt(i)) {
                 case 'I' -> {
                     symToVal = 1;
                     result += symToVal;
