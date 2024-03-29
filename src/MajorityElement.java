@@ -26,6 +26,21 @@ public class MajorityElement {
         }
         Map.Entry<Integer,Integer> maxEntry = Collections.max(map.entrySet(), Map.Entry.comparingByValue());
         return maxEntry.getKey();
+
+        //approach_2 with Map:
+        //int n=num.length;
+        //n = n / 2;
+        //        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+        //            if (entry.getValue() > n) {
+        //                return entry.getKey();
+        //            }
+        //        }
+        //approach_3:
+        //public int majorityElement(int[] nums) {
+        //        Arrays.sort(nums);
+        //        int n = nums.length;
+        //        return nums[n/2];
+        //    }
     }
 
     public static void main(String[] args) {
